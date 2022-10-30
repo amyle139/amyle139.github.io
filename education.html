@@ -1,39 +1,56 @@
+<!--
+ Name: Amy Le
+ Date: 10-31-2022
+ Section: CSE 190z
+ This is the education.html page for my portfolio. It includes the college and university I have attended/am attending and what
+	my degrees focused on.
+-->
+
 <!DOCTYPE html>
 <html>
 
 <!--Start of Webpage Skeleton-->
+
 <head>
 	<meta charset="utf-8">
 	<!--Change title based on page-->
 	<title>Amy Le — Education </title>
-	<link rel="stylesheet" href="style-index.css">
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	
+
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:wght@300;400&display=swap"
+		rel="stylesheet">
 </head>
 
-	<div>
-		<center> <h1 class="title">Amy Le</h1></center>
-	</div>
+<header>
+	<center>
+		<h1 class="title">Amy Le</h1>
+	</center>
+	<img id="header-rat-right" alt-text="rat emoji facing to the right"
+		src="https://media.discordapp.net/attachments/792921381071093771/1036391172345708554/1f400.png">
+	<img id="header-rat-left" alt-text="rat emoji facing to the left"
+		src="https://images.emojiterra.com/google/android-11/512px/1f400.png">
+</header>
 
 <body>
 
 	<div class="topnav">
 		<nav>
 			<ul>
-				
+
 				<li><a href="index.html">Home</a></li>
 
 				<a href="education.html">
 					<li>Education
 						<ul class="sub-nav">
 							<a href="education.html#uw">
-								<li>University of Washington</li></a>
+								<li>University of Washington</li>
+							</a>
 							<a href="education.html#spscc">
 								<li>South Puget Sound Comminity College</li>
 						</ul>
@@ -43,94 +60,122 @@
 				<a href="experience.html">
 					<li>Experience
 						<ul class="sub-nav">
-							<a href= "aurismania.html">
-								<li>Aurismania</li></a>
-							<a href= "experience.html#mcdonalds">
-								<li>McDonald's</li></a>
+							<a href="aurismania.html">
+								<li>Aurismania</li>
+							</a>
+							<a href="experience.html#mcdonalds">
+								<li>McDonald's</li>
+							</a>
 						</ul>
 					</li>
 				</a>
-			
+
 				<a href="projects.html">
 					<li>Projects
 						<ul class="sub-nav">
 							<a href="projects.html#cordyceps">
-								<li>Cordyceps<br> Calculator</li></a>
+								<li>Cordyceps<br> Calculator</li>
+							</a>
 							<a href="projects.html#gateoftrials">
-							<li>Gate of Trials Calculator</li></a>
+								<li>Gate of Trials Calculator</li>
+							</a>
 						</ul>
 					</li>
 				</a>
-			
+
 				<a href="community.html">
 					<li> Community
 						<ul class="sub-nav">
 							<a href="community.html#stars-sac">
-								<li>UW STARS Student Advisory Council</li></a>
+								<li>UW STARS Student Advisory Council</li>
+							</a>
 							<a href="community.html#ff-wiki">
-								<li>Food Fantasy Wiki</li></a>
+								<li>Food Fantasy Wiki</li>
+							</a>
 							<a href="community.html#key-club"></a>
-								<li>Key Club</li></a>
-						</ul>
-					</li>
+							<li>Key Club</li>
 				</a>
+			</ul>
+			</li>
+			</a>
 
 			</ul>
 		</nav>
 	</div>
 
-<!--End of Skeleton-->
+	<!--End of Skeleton-->
+	<main>
+		<div id="uw">
+			<img id="education-header" alt-text="University of Washington's 'The Quad'"
+				src="http://faculty.washington.edu/paymana/images/photos/uw/blossoms4.gif">
+			<p><a class="image-source" href="http://faculty.washington.edu/paymana/uw_photos.html">Image Source</a></p>
 
-    <div id="uw">
-            <img id ="education-header" alt-text="University of Washington's 'The Quad'" src="http://faculty.washington.edu/paymana/images/photos/uw/blossoms4.gif">
-            <p><a class="image-source" href="http://faculty.washington.edu/paymana/uw_photos.html">Image Source</a></p>
-			
 
-            <h1 class = "education-main-text">University of Washington</h1>
-            <p class = "education-main-text">Bachelors in Science - Computer Science: Data Science </p>
-            <p id = "graduation">Expected Graduation: June 2025 | GPA: 3.83</p>
-        
-            <div class="education-resume">
-                <h4>Relevant coursework: </h4>
-                <p> Calculus,  Introduction to Computer Programming II & III (planned for Winter and Spring, 2023), Data and Society (planned for Spring 2023)     </p>
-                
-                <br><br><h4>Awards:</h4>
-                <p>  Dean's List - Winter 2022,  BAVA Endowed Scholarship     </p>
-                
-                <br><br><h4>Organizations:</h4>
-                <p>UW STARS Program, UW STARS Student Advisory Council, UW Maker’s Fair      </p>
-				
-			</p>
+			<h1 class="education-main-text">University of Washington</h1>
+			<p class="education-main-text">Bachelors in Science - Computer Science: Data Science </p>
+			<p id="graduation">Expected Graduation: June 2025 | GPA: 3.83</p>
 
-				
-            </div>
-	</div>
+			<div class="education-resume">
+				<h4>Relevant coursework: </h4>
+				<p> Calculus, Introduction to Computer Programming II & III (planned for Winter and Spring, 2023), Data
+					and Society (planned for Spring 2023) </p>
 
-    <div id="spscc">
-        <img id ="education-header" alt-text="South Puget Sound Community College's Main Building" src="https://spscc.edu/sites/default/files/imce/news/articles/images/Building%2022.jpg">
-        <p><a class="image-source" href="https://spscc.edu/start/parents-counselors">Image Source</a></p>
+				<br><br>
+				<h4>Awards:</h4>
+				<p> Dean's List - Winter 2022, BAVA Endowed Scholarship </p>
 
-        <h1 class = "education-main-text">South Puget Sound CC</h1>
-        <p class = "education-main-text">Associate of Arts in Arts and Communications </p>
-        <p id = "graduation"> Graduation: June 2021 | GPA: 4.00 </p>
-    
-        <div class="education-resume">
-            <h4>Relevant coursework:</h4>
-            <p> Object-Oriented Programming I & II, Introduction to Networking     </p>
-            
-            <br><br><h4>Awards:</h4>
-            <p>  President's List for all quarters     </p>
-            
-        </div>
+				<br><br>
+				<h4>Organizations:</h4>
+				<p>UW STARS Program, UW STARS Student Advisory Council, UW Maker’s Fair </p>
 
-	</div>
+				</p>
 
+
+			</div>
+		</div>
+
+		<div id="spscc">
+			<img id="education-header" alt-text="South Puget Sound Community College's Main Building"
+				src="https://spscc.edu/sites/default/files/imce/news/articles/images/Building%2022.jpg">
+			<p><a class="image-source" href="https://spscc.edu/start/parents-counselors">Image Source</a></p>
+
+			<h1 class="education-main-text">South Puget Sound CC</h1>
+			<p class="education-main-text">Associate of Arts in Arts and Communications </p>
+			<p id="graduation"> Graduation: June 2021 | GPA: 4.00 </p>
+
+			<div class="education-resume">
+				<h4>Relevant coursework:</h4>
+				<p> Object-Oriented Programming I & II, Introduction to Networking </p>
+
+				<br><br>
+				<h4>Awards:</h4>
+				<p> President's List for all quarters </p>
+
+			</div>
+
+		</div>
+	</main>
 </body>
 
 <footer>
 	<hr>
-	<br>
-    Portions of this page © 2022 Amy Le, other attributions cited in document or page source
+	<a href="https://www.linkedin.com/in/amyle139"><img class="footer-img"
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png">
+		<p class="footer-text">LinkedIn </p>
+	</a>
+
+	<a href="https://app.joinhandshake.com/stu/users/32100800"><img class="footer-img"
+			src="https://joinhandshake.com/wp-content/themes/handshake/dist/assets/images/home/handshake-logo.png">
+		<p class="footer-text">Handshake </p>
+	</a>
+
+	<a href="https://github.com/amyle139"><img class="footer-img"
+			src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+		<p class="footer-text">GitHub </p>
+	</a>
+
+	<div id="footer-cr"><br>Portions of this page © 2022 Amy Le, other attributions cited in document or page source
+	</div>
 </footer>
 
 </html>

@@ -1,3 +1,13 @@
+/*
+  Name: Amy Le
+  Date: 10-31-2022
+  Section: CSE 190z
+  This is the style.css page for my portfolio of web development
+ 	work. It is used by all pages in my portfolio to give the site
+a consistent look and feel. 
+*/
+
+
 @font-face {
 	font-family: lemon-milk;
 	src: url(fonts/LEMONMILK-Regular.otf);
@@ -35,6 +45,11 @@ div {
 	background: #ffe7e7;
 }
 
+header {
+	background: #ffe7e7;
+	height: 50px;
+}
+
 footer {
 	padding: 10px;
 	background-color: #ffe7e7;
@@ -42,19 +57,54 @@ footer {
 	text-align: center;
 }
 
+#footer-cr {
+	padding-right: 20%;
+}
+
+.footer-img {
+	float: left;
+	display: inline-block;
+	padding-top: 10px;
+	height: 20px;
+}
+
+.footer-text {
+	float: left;
+	display: inline-block;
+	color: black;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 15px;
+	text-align: left;
+}
+
 hr {
 	position: relative;
-        border: none;
-        height: 5px;
-        background: #f8afa6;
+	border: none;
+	height: 5px;
+	background: #f8afa6;
 }
+
+#header-rat-right {
+	height: 25px;
+	padding-top: 4%;
+	display: inline;
+}
+
+#header-rat-left {
+	padding-left: 96%;
+	height: 25px;
+	padding-top: 4%;
+	display: inline;
+}
+
 /**End of General**/
 
 /**Start of Navigation Bar**/
 /**Visual for Navigation Bar**/
 .topnav nav {
 	min-width: 100%;
-	min-height:50px;
+	min-height: 50px;
 	background: #f79489;
 	border-bottom: 5px solid #f8afa6;
 	border-top: 5px solid #f8afa6;
@@ -62,14 +112,14 @@ hr {
 	top: 10px;
 	left: 0;
 	z-index: 999;
-    overflow-wrap: break-word;
-    display:flex;
-    
+	overflow-wrap: break-word;
+	display: flex;
+
 }
 
 /**Shifts the elements for the nav bar. Adjusting width changes how spread apart they are**/
 .topnav nav ul {
-    text-align: center;
+	text-align: center;
 	width: 75%;
 	height: 100%;
 	margin-left: 18%;
@@ -97,15 +147,16 @@ hr {
 	color: #ea3b50;
 	box-shadow: inset 0 5px white;
 }
+
 /**Start of Sub-navigation**/
 
 /**Visuals of the dropdown menu**/
-nav ul li ul.sub-nav{
+nav ul li ul.sub-nav {
 	position: absolute;
 	top: 100%;
 	right: 0%;
 	width: 100%;
-    height: inherit;
+	height: inherit;
 	background: #f79489;
 	border-top: 1px solid #f79489;
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
@@ -118,7 +169,7 @@ nav ul li ul.sub-nav li {
 	font-size: 14px;
 	width: 100%;
 	padding: 15px 0;
-    overflow: break-word;
+	overflow: break-word;
 }
 
 nav ul li ul.sub-nav li:hover {
@@ -130,6 +181,7 @@ nav ul li:hover ul.sub-nav {
 	visibility: visible;
 	opacity: 1;
 }
+
 /**End of Navigation Bar**/
 /**End of Skeleton**/
 
@@ -139,8 +191,7 @@ nav ul li:hover ul.sub-nav {
 
 /**Start of Index**/
 .header {
-	background: url("https://i.pinimg.com/originals/d4/66/45/d466456b0e4cc1d83a9322e5a0d29378.jpg")
-		no-repeat center;
+	background: url("https://i.pinimg.com/originals/d4/66/45/d466456b0e4cc1d83a9322e5a0d29378.jpg") no-repeat center;
 	background-size: cover;
 	min-height: 900px;
 	margin-top: 10px;
@@ -152,18 +203,18 @@ nav ul li:hover ul.sub-nav {
 }
 
 .header-text {
-    flex-direction: column;
+	flex-direction: column;
 	display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left:5%;
-    }
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 5%;
+}
 
 .header-text h1 {
-    position: absolute;
-    top:50%;
+	position: absolute;
+	top: 50%;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: bold;
-	background-color: rgba(255,231,231,.5);
+	background-color: rgba(255, 231, 231, .5);
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 }
@@ -171,23 +222,23 @@ nav ul li:hover ul.sub-nav {
 .header-text p {
 	font-size: larger;
 	width: 50%;
-    position: absolute;
-    top: 55%;
+	position: absolute;
+	top: 55%;
 	font-family: 'Ubuntu', sans-serif;
-	background-color: rgba(255,231,231,.5);
+	background-color: rgba(255, 231, 231, .5);
 
 }
 
 .header-text #learn-more {
 	font-size: larger;
 	width: auto;
-    position: absolute;
-    top: 85%;
+	position: absolute;
+	top: 85%;
 	font-family: 'Ubuntu', sans-serif;
-	background-color: rgba(255,231,231,.5);
+	background-color: rgba(255, 231, 231, .5);
 }
 
-.header-picture{
+.header-picture {
 	position: absolute;
 	float: right;
 	background-size: cover;
@@ -199,16 +250,17 @@ nav ul li:hover ul.sub-nav {
 
 #image-source {
 	position: relative;
-	margin-left:-10%;
+	margin-left: -10%;
 	margin-top: 72%;
 	color: black;
 	font-size: larger;
 	width: auto;
-    position: absolute;
-    top: 118%;
+	position: absolute;
+	top: 118%;
 	font-family: 'Ubuntu', sans-serif;
-	background-color: rgba(255,231,231,.5);
+	background-color: rgba(255, 231, 231, .5);
 }
+
 /**End of Index**/
 
 
@@ -234,12 +286,12 @@ nav ul li:hover ul.sub-nav {
 	font-size: smaller;
 }
 
-.education-main-text h1{
+.education-main-text h1 {
 	margin-left: 5%;
 	font-size: medium;
 }
 
-.education-main-text p{
+.education-main-text p {
 	margin-left: 5%;
 	font-size: small;
 }
@@ -250,13 +302,22 @@ nav ul li:hover ul.sub-nav {
 
 .image-source {
 	padding-left: 75px;
-	color:black;
+	color: black;
 }
 
-#uw, #spscc, #mcdonalds, #aurismania, #cordyceps, #gateoftrials, #stars-sac, #ff-wiki, #key-club {
+#uw,
+#spscc,
+#mcdonalds,
+#aurismania,
+#cordyceps,
+#gateoftrials,
+#stars-sac,
+#ff-wiki,
+#key-club {
 	background-color: #ffe7e7;
 	display: grid;
 }
+
 /**End of  Education, Experience, Projects, and Community**/
 
 
@@ -267,33 +328,33 @@ nav ul li:hover ul.sub-nav {
 /**Start of Aurismania**/
 
 div.aurismania-gallery {
-    vertical-align: top;
-    display: block;
-    text-align: center;
-    width: 20%;
-		padding: 35px;
-		padding-right: 2.64%;
-		padding-bottom: 20px;
-		background-color: #ffe7e7;
-		float: left;
+	vertical-align: top;
+	display: block;
+	text-align: center;
+	width: 20%;
+	padding: 35px;
+	padding-right: 2.64%;
+	padding-bottom: 20px;
+	background-color: #ffe7e7;
+	float: left;
 }
 
 .aurismania-gallery img {
-		object-fit: cover;
-    width: 296px;
-    height: 296px;
-    background-color: #ffe7e7;
+	object-fit: cover;
+	width: 296px;
+	height: 296px;
+	background-color: #ffe7e7;
 	border: 10px double white;
 
 }
 
 .caption {
-    display: block;
-		color: black;
-		padding-top: 15px;
-		font-family: 'Ubuntu', sans-serif;
-		font-size: 15px;
-		background-color: #ffe7e7;
+	display: block;
+	color: black;
+	padding-top: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	background-color: #ffe7e7;
 }
 
 #aurismania-gallery-title {
@@ -304,7 +365,7 @@ div.aurismania-gallery {
 	color: #f79489;
 }
 
-#aurismania-gallery-subtitle{
+#aurismania-gallery-subtitle {
 	padding-top: 5px;
 	font-family: 'Ubuntu', sans-serif;
 	text-align: center;
